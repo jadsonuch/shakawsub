@@ -1,0 +1,100 @@
+/* GENERAL DEFINITIONS */
+body{
+    font-size:12px;
+    font-family:Arial;
+    padding:0;
+    margin:0
+}
+ 
+h1,h2,h3,h4{
+    padding:2px 4px;
+    font-weight:normal;
+    color:#fff;
+    text-shadow:1px 1px 0 #3070D5;
+    border:1px solid #3079ED
+}
+h1{font-size:22px}
+h2{font-size:20px}
+h3{font-size:18px}
+h4{font-size:16px}
+a{color:#2219B2}
+a:hover{color:#7872D8}
+#container{margin:0 10px}
+ 
+.home-title{
+    font-size:24px;
+    font-weight:normal;
+    text-align:center;
+    width:100%;
+    padding:2px;
+    margin:0;
+    color:#fff;
+    text-shadow:1px 1px 0 #3070D5;
+    border:1px solid #3079ED;
+}
+ 
+/* LOGIN */
+#login{
+    width: 250px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius:20px;
+    margin:100px auto 0;
+    padding: 30px;
+    -moz-box-shadow:0px 0px 80px #999;
+    -webkit-box-shadow:0px 0px 80px #999;
+    box-shadow:0px 0px 80px #999;
+    background-color:#f5f5f5;
+    border:1px solid #D5D5D5
+}
+#login label {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+}
+#login input[type=text], #login input[type=password] {
+    font-size: 16px;
+    padding: 2px;
+    margin:0 0 15px;
+    border: 1px solid #999;
+    background: #fff;
+    width: 100%;
+    color:#000;
+}
+#login input[type=text]:hover, #login input[type=password]:hover {
+    -moz-box-shadow:0px 0px 5px #999;
+    -webkit-box-shadow:0px 0px 5px #999;
+    box-shadow:0px 0px 5px #999;
+}
+#login input[type=submit]{
+    font-size:16px;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    padding:2px;
+    cursor:pointer;
+    border-radius:5px;
+    color:#fff;
+    text-shadow:1px 1px 0 #3070D5;
+    border:1px solid #3079ED;
+    font-weight: bold
+}
+ 
+/* CLASSES */
+.blue-gradient, .btn-blue{background-color:#4A8BF5;
+    background:-moz-linear-gradient(19% 75% 90deg,#4080E5, #4F8FFF);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4F8FFF), to(#4080E5));
+}
+.btn-blue:hover{background-color:#3D7DE0;
+    background:-moz-linear-gradient(19% 75% 90deg,#4080E5, #3574D5);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#3574D5), to(#4080E5));
+}
+.darker-on-hover:hover{
+    background:#e5e5e5;
+}
+.error{
+    color:#DD0000;
+}
+.clear{
+    clear:both;
+}
