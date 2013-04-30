@@ -1,0 +1,1 @@
+http://oscardias.com/br/desenvolvimento/php/codeigniter/criando-um-app-usando-codeigniter-parte-7-validacoes/

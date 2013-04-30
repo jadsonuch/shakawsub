@@ -26,4 +26,26 @@ class User_model extends CI_Model {
 	    return array();
 	}
 
+	public function update($id, $data)
+	{
+	    if(isset($data['password']))
+	        $data['password'] = sha1($data['password'].$this->salt);
+	    $this->db->where('id', $id);
+	    $update = $this->db->update('user', $data);
+	    return $update;
+	}
+
+	/*Funcao de deletar...não sera usada*/
+	public function delete($id)
+	{
+	    $this->db->where('id', $id);
+	    $this->db->delete('user');
+	}
+
+	/*funcao criar */
+	public function create($data)
+	{
+		$data['password'] = sha1($data['password'].$this->salt);
+		return $this->db->insert('user', $data);
+	}
 }
